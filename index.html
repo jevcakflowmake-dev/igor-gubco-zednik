@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Igor Gubčo — Řemeslník · Mladá Boleslav</title>
+  <meta name="description" content="Zednické, obkladačské a malířské práce v Mladé Boleslavi a okolí. 20 let zkušeností. Igor Gubčo — řemeslo, na které se můžete spolehnout." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  NAV                                                  ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<nav id="nav" role="navigation" aria-label="Hlavní navigace">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo">Igor Gubčo</a>
+
+    <ul class="nav-links">
+      <li><a href="#sluzby">Služby</a></li>
+      <li><a href="#o-mne">O mně</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+
+    <button class="nav-hamburger" id="hamburger" aria-label="Otevřít menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<nav class="nav-mobile" id="nav-mobile" aria-label="Mobilní navigace">
+  <a href="#sluzby">Služby</a>
+  <a href="#o-mne">O mně</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  HERO                                                 ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<section id="hero" aria-label="Úvodní sekce">
+  <div class="noise-layer" aria-hidden="true"></div>
+
+  <div class="hero-parallax">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Mladá Boleslav &amp; okolí</p>
+        <h1 class="hero-headline">Řemeslo, na&nbsp;které se&nbsp;můžete spolehnout.</h1>
+        <p class="hero-sub">Zednické, obkladačské a malířské práce &middot; Mladá Boleslav a okolí</p>
+        <div class="hero-cta">
+          <a href="#kontakt" class="btn btn-solid">Nezávazná poptávka</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  SLUŽBY                                               ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<section id="sluzby">
+  <div class="container">
+    <span class="section-label">Co dělám</span>
+    <h2 class="section-title">Služby</h2>
+
+    <div class="services-grid">
+
+      <!-- Zednické práce -->
+      <article class="service-card">
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="4" y="32" width="40" height="8" rx="1"/>
+          <rect x="10" y="22" width="28" height="8" rx="1"/>
+          <rect x="4" y="12" width="40" height="8" rx="1"/>
+          <line x1="24" y1="32" x2="24" y2="40"/>
+          <line x1="16" y1="22" x2="16" y2="30"/>
+          <line x1="32" y1="22" x2="32" y2="30"/>
+          <line x1="10" y1="12" x2="10" y2="20"/>
+          <line x1="38" y1="12" x2="38" y2="20"/>
+        </svg>
+        <h3>Zednické práce</h3>
+        <p>Zdění příček a základů, komplexní opravy fasád, betonářské práce a rekonstrukce. Každá zakázka provedena pečlivě s důrazem na trvanlivost.</p>
+      </article>
+
+      <!-- Obkladačské práce -->
+      <article class="service-card">
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="4" y="4" width="18" height="18" rx="1"/>
+          <rect x="26" y="4" width="18" height="18" rx="1"/>
+          <rect x="4" y="26" width="18" height="18" rx="1"/>
+          <rect x="26" y="26" width="18" height="18" rx="1"/>
+        </svg>
+        <h3>Obkladačské práce</h3>
+        <p>Pokládka dlažby a obkladů v koupelnách, kuchyních i exteriérech. Precizní spárování, hydroizolace, dokončení ve vysokém standardu.</p>
+      </article>
+
+      <!-- Malířské práce -->
+      <article class="service-card">
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M14 36 L10 44 L18 40 Z"/>
+          <line x1="14" y1="36" x2="34" y2="16"/>
+          <path d="M34 16 C34 16 38 10 42 8 C40 12 38 16 34 16"/>
+          <path d="M28 22 L26 20" stroke-width="2.5"/>
+          <circle cx="10" cy="36" r="2" fill="currentColor" stroke="none"/>
+        </svg>
+        <h3>Malířské práce</h3>
+        <p>Nátěry interiérů i exteriérů, štukování, tapetování, malování pokojů. Čistá práce bez zbytečného nepořádku — prostory předám v dokonalém stavu.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  O MNĚ                                                ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<section id="o-mne">
+  <div class="container">
+    <span class="section-label">Kdo jsem</span>
+    <h2 class="section-title">O mně</h2>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          Jmenuji se <strong>Igor Gubčo</strong> a řemeslu se věnuji přes dvacet let.
+          Za tu dobu jsem prošel stovkami zakázek — od malých oprav v bytě po kompletní rekonstrukce
+          rodinných domů a komerčních prostor.
+        </p>
+        <p>
+          Pocházím z Mladé Boleslavi a pracuji především pro místní zákazníky a jejich rodiny.
+          Znám zdejší domy, materiály i specifika regionu — a to se v práci pozná.
+        </p>
+        <p>
+          Zakládám si na <strong>poctivém přístupu</strong>: přijdu v domluvený čas,
+          práci dokončím včas a za dohodnutou cenu. Žádná překvapení na konci.
+        </p>
+        <p>
+          Každou zakázku řeším individuálně — rád se přijedu podívat, poradím
+          s výběrem materiálů a nabídnu realistický odhad ceny i termínu.
+        </p>
+      </div>
+
+      <div class="stats-block" aria-label="Statistiky">
+        <div class="stat-item">
+          <div class="stat-num">
+            <span data-count="20" aria-label="20">0</span><span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-label">let praxe</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">
+            <span data-count="500" aria-label="500">0</span><span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-label">spokojených zákazníků</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">
+            <span data-count="100" aria-label="100">0</span><span class="stat-suffix">%</span>
+          </div>
+          <div class="stat-label">dokončených zakázek</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  PROČ JÁ                                              ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<section id="proc-ja">
+  <div class="container">
+    <span class="section-label">Důvody ke spolupráci</span>
+    <h2 class="section-title">Proč já?</h2>
+
+    <div class="why-grid">
+
+      <div class="why-item">
+        <svg class="why-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 4 L22 14 L33 14 L24 20 L27 31 L18 25 L9 31 L12 20 L3 14 L14 14 Z"/>
+        </svg>
+        <h4>Spolehlivost</h4>
+        <p>Přijdu v domluvený čas, práci dokončím podle dohody. Slovo platí.</p>
+      </div>
+
+      <div class="why-item">
+        <svg class="why-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="18" cy="18" r="14"/>
+          <path d="M18 10 L18 18 L24 22"/>
+          <line x1="12" y1="6" x2="14" y2="9"/>
+          <line x1="24" y1="6" x2="22" y2="9"/>
+        </svg>
+        <h4>Férová cena</h4>
+        <p>Jasný a transparentní odhad před zahájením. Žádné skryté náklady ani nepříjemná překvapení.</p>
+      </div>
+
+      <div class="why-item">
+        <svg class="why-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="6" y="14" width="24" height="16" rx="1"/>
+          <path d="M12 14 L12 10 C12 7 14 5 18 5 C22 5 24 7 24 10 L24 14"/>
+          <circle cx="18" cy="22" r="3" fill="currentColor" stroke="none"/>
+        </svg>
+        <h4>Kvalitní materiály</h4>
+        <p>Používám prověřené materiály od ověřených dodavatelů — výsledek vydrží roky.</p>
+      </div>
+
+      <div class="why-item">
+        <svg class="why-icon" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="13" cy="13" r="7"/>
+          <circle cx="26" cy="24" r="6"/>
+          <line x1="18" y1="18" x2="22" y2="20"/>
+        </svg>
+        <h4>Individuální přístup</h4>
+        <p>Každá zakázka je jiná. Přizpůsobím se vašim potřebám, rozpočtu i časovým možnostem.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  KONTAKT                                              ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<section id="kontakt">
+  <div class="container">
+    <span class="section-label">Napište mi</span>
+    <h2 class="section-title">Kontakt</h2>
+
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <h3>Nezávazná poptávka</h3>
+        <p style="color:var(--muted);font-size:.95rem;margin-bottom:2rem;line-height:1.65;">
+          Popište mi svůj záměr, rád se přijedu podívat a domluvíme termín i cenu.
+          Odpovídám zpravidla do 24 hodin.
+        </p>
+
+        <div class="contact-detail">
+          <svg class="contact-detail-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 4h14l-7 7-7-7z"/>
+            <rect x="3" y="4" width="14" height="12" rx="1"/>
+          </svg>
+          <div>
+            <strong>E-mail</strong>
+            <p>igor.gubco@email.cz</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <svg class="contact-detail-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 4 C4 4 6 2 8 4 L9.5 7 C9.5 7 10 8 9 9 L8 10 C8 10 9 12 11 14 C13 16 15 17 15 17 L16 16 C17 15 18 15.5 18 15.5 L21 17 C23 18.5 21 21 21 21 C14 24 3 13 4 4 Z" transform="scale(0.9) translate(0.5, 0.5)"/>
+          </svg>
+          <div>
+            <strong>Telefon</strong>
+            <p>+420 777 000 000</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <svg class="contact-detail-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M10 2 C7 2 4 5 4 8.5 C4 13 10 18 10 18 C10 18 16 13 16 8.5 C16 5 13 2 10 2Z"/>
+            <circle cx="10" cy="8.5" r="2.5"/>
+          </svg>
+          <div>
+            <strong>Oblast působení</strong>
+            <p>Mladá Boleslav a okolí (do 30 km)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Jméno a příjmení</label>
+              <input type="text" id="fname" name="fname" placeholder="Jan Novák" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" name="phone" placeholder="+420 777 123 456" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="vas@email.cz" required />
+          </div>
+
+          <div class="form-group">
+            <label for="service">Typ práce</label>
+            <select id="service" name="service">
+              <option value="">— Vyberte typ zakázky —</option>
+              <option>Zednické práce</option>
+              <option>Obkladačské práce</option>
+              <option>Malířské práce</option>
+              <option>Kombinace prací</option>
+              <option>Jiné</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Popis zakázky</label>
+            <textarea id="message" name="message" placeholder="Stručně popište, co potřebujete…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-solid">Odeslat poptávku</button>
+        </form>
+
+        <div class="form-success" id="form-success" role="alert">
+          Poptávka odeslána. Ozvu se vám do 24 hodin. Děkuji!
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════════════════╗ -->
+<!-- ║  FOOTER                                               ║ -->
+<!-- ╚══════════════════════════════════════════════════════╝ -->
+<footer>
+  <div class="container footer-inner">
+    <span class="footer-logo">Igor Gubčo</span>
+    <span class="footer-copy">&copy; <script>document.write(new Date().getFullYear())</script> Igor Gubčo &middot; Mladá Boleslav &middot; Všechna práva vyhrazena</span>
+  </div>
+</footer>
+
+
+<script src="main.js"></script>
+</body>
+</html>
