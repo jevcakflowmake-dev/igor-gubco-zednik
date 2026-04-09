@@ -6,11 +6,11 @@
 
 /* ── Variables ─────────────────────────────────────────────── */
 :root {
-  --bg:      #F5F0EB;
-  --surface: #EDEAE5;
-  --text:    #1C1A18;
-  --accent:  #C4723A;
-  --muted:   #7A7570;
+  --bg:      #FAFAF8;
+  --surface: #F0EBE4;
+  --text:    #1E1C19;
+  --accent:  #B8622C;
+  --muted:   #8A847C;
   --nav-h:   64px;
 }
 
@@ -95,7 +95,7 @@ section { padding: 6rem 0; }
   font-weight: 700;
   font-size: 1.35rem;
   letter-spacing: .04em;
-  color: #fff;
+  color: var(--text);
   transition: color .3s;
 }
 #nav.scrolled .nav-logo { color: var(--text); }
@@ -111,7 +111,7 @@ section { padding: 6rem 0; }
   font-size: 1rem;
   letter-spacing: .1em;
   text-transform: uppercase;
-  color: rgba(255,255,255,.85);
+  color: var(--muted);
   transition: color .2s;
 }
 #nav.scrolled .nav-links a { color: var(--muted); }
@@ -132,7 +132,7 @@ section { padding: 6rem 0; }
   display: block;
   width: 26px;
   height: 2px;
-  background: #fff;
+  background: var(--text);
   transition: background .3s, transform .3s, opacity .3s;
 }
 #nav.scrolled .nav-hamburger span { background: var(--text); }
@@ -174,10 +174,10 @@ section { padding: 6rem 0; }
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-color: #2A2520;
+  background-color: #DDD6CD;
 }
 
-/* concrete-like background pattern */
+/* concrete-like background pattern — light version */
 #hero::before {
   content: '';
   position: absolute;
@@ -185,26 +185,26 @@ section { padding: 6rem 0; }
   background-image:
     repeating-linear-gradient(
       0deg,
-      rgba(255,255,255,.018) 0px,
-      rgba(255,255,255,.018) 1px,
+      rgba(0,0,0,.028) 0px,
+      rgba(0,0,0,.028) 1px,
       transparent 1px,
       transparent 28px
     ),
     repeating-linear-gradient(
       90deg,
-      rgba(255,255,255,.012) 0px,
-      rgba(255,255,255,.012) 1px,
+      rgba(0,0,0,.018) 0px,
+      rgba(0,0,0,.018) 1px,
       transparent 1px,
       transparent 42px
     );
-  background-color: #2A2520;
+  background-color: #DDD6CD;
 }
 /* secondary grain layer */
 #hero::after {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='.08'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='.06'/%3E%3C/svg%3E");
   background-size: 300px 300px;
   pointer-events: none;
 }
@@ -242,7 +242,7 @@ section { padding: 6rem 0; }
 }
 .hero-headline {
   font-size: clamp(2.6rem, 7vw, 5.2rem);
-  color: #F5F0EB;
+  color: var(--text);
   max-width: 720px;
   opacity: 0;
   transform: translateY(20px);
@@ -250,7 +250,7 @@ section { padding: 6rem 0; }
 }
 .hero-sub {
   font-size: clamp(.9rem, 2vw, 1.1rem);
-  color: rgba(245,240,235,.65);
+  color: var(--muted);
   margin-top: 1.25rem;
   opacity: 0;
   transform: translateY(20px);
@@ -310,12 +310,12 @@ section { padding: 6rem 0; }
   font-size: .7rem;
   letter-spacing: .2em;
   text-transform: uppercase;
-  color: rgba(245,240,235,.4);
+  color: rgba(30,28,25,.35);
 }
 .scroll-line {
   width: 1px;
   height: 48px;
-  background: rgba(245,240,235,.3);
+  background: rgba(30,28,25,.2);
   position: relative;
   overflow: hidden;
 }
